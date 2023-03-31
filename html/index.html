@@ -8,3 +8,58 @@
 
 </body>
 </html>
+<script type="application/javascript" class="task_1">
+    console.log('task 1');
+    let elementsArray = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
+    for(let i = 0; i < elementsArray.length; i++) {
+        if (elementsArray[i] === 'молоко'){
+            console.log('Хорошо');
+        }
+        else if (elementsArray[i] === 'пиво'){
+            console.log('плохо');
+        }
+    };
+</script>
+<script type="application/javascript" class="task_2">
+    console.log('task 2');
+    let first_numbersArray = [1, 5, 12, 4, 3];
+    let second_numbersArray = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let third_numbersArray = [3, 10, 17];
+    function avg(numbersArray) {
+        let dividend = 0;
+        let divider = 0;
+        for(let i = 0; i < numbersArray.length; i++) {
+            divider++;
+            dividend = dividend + numbersArray[i];
+        }
+        return dividend / divider;
+    };
+    console.log(avg(first_numbersArray));
+    console.log(avg(second_numbersArray));
+    console.log(avg(third_numbersArray));
+</script>
+<script type="application/javascript" class="task_3">
+    let corner_number = prompt("У квадратного стола отпилили один угол. Сколько теперь углов у него стало?");
+    if (corner_number == '5' || corner_number == 'пять'){
+        alert("Ответ верный");
+    }
+    else {
+        alert('Ответ неверный');
+    }
+</script>
+<script type="application/javascript" class="task_4">
+    console.log('task 4');
+    duck = {
+        name: 'Дональд',
+        color: 'белый',
+        age: '1',
+        toStr: function() {
+            return this.name + ', ' + this.color + ', ' + this.age + ' год';
+            },
+        say: function() {
+            return 'кря кря';
+            }
+    };
+    console.log(duck.toStr());
+    console.log(duck.say());
+</script>
